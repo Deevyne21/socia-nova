@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socianova | Grow With Real Influence</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-secondary text-dark font-body">
+    <!-- NAV -->
+
+    <nav
+      id="navbar"
+      class="bg-primary/80 backdrop-blur-md text-white py-5 px-6 md:px-12 fixed w-full top-0 left-0 z-50 transition-all duration-300"
+    >
+      <div class="flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#hero" class="flex gap-2 items-center">
+          <span
+            class="bg-accent w-8 h-8 flex items-center justify-center rounded-full"
+          >
+            <i class="fa-solid fa-hexagon-nodes"></i>
+          </span>
+          <span class="logo text-xl font-semibold">Socianova</span>
+        </a>
+
+        <!-- Hamburger (Mobile) -->
+        <button
+          id="menu-btn"
+          class="block md:hidden text-white text-2xl focus:outline-none"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Nav Links -->
+        <div>
+          <ul
+            id="nav-links"
+            class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-7 absolute md:static bg-primary md:bg-transparent left-0 top-[70px] md:top-0 w-full md:w-auto text-center md:text-left py-5 md:py-0 shadow-md md:shadow-none transition-all duration-500 ease-in-out transform scale-y-0 md:scale-y-100 origin-top"
+          >
+            <li>
+              <a href="#about" class="block py-2 hover:text-accent">About</a>
+            </li>
+            <li>
+              <a href="#results" class="nav-link">Results</a>
+            </li>
+            <li>
+              <a href="#resources" class="nav-link">Resources</a>
+            </li>
+            <li>
+              <a href="#testimonials" class="nav-link">Testimonials</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CTA -->
+        <div class="primary-btn mt-4 md:mt-0">
+          <a
+            href="https://calendly.com/johnsondivine15/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-green inline-block"
+          >
+            Schedule a Call
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section
+      id="hero"
+      class="pt-[120px] px-6 md:px-12 text-center bg-primary text-light"
+    >
+      <div class="flex flex-col items-center text-center">
+        <!-- Headline -->
+        <h1
+          class="text-2xl sm:text-3xl md:text-5xl font-semibold leading-snug md:leading-tight max-w-3xl"
+        >
+          Turn Followers Into Loyal Customers
+        </h1>
+
+        <p class="max-w-xl text-sm sm:text-base md:text-lg text-gray-100 py-4">
+          Socianova helps brands grow with authentic influencer marketing,
+          building trust, driving engagement, and converting social influence
+          into measurable business results.
+        </p>
+
+        <!-- CTA BUTTONS-->
+
+        <div class="flex flex-col sm:flex-row gap-5 sm:gap-7 items-center py-4">
+          <div class="primary-btn w-full sm:w-auto">
+            <a href="#" class="block text-cente">Get Started </a>
+          </div>
+          <div>
+            <a
+              href="#"
+              class="flex items-center justify-center gap-2 text-sm sm:text-base"
+            >
+              <span
+                class="play border border-light rounded-full w-10 h-10 flex items-center justify-center hover:bg-light hover:text-primary transition"
+                ><i class="fa-solid fa-play"></i
+              ></span>
+              <span>Learn more</span></a
+            >
+          </div>
+        </div>
+        <!-- Brand logos -->
+        <div class="flex items-center mt-6">
+          <img
+            src="./img/loop.png"
+            alt="brand1"
+            class="w-9 h-9 rounded-full object-cover border-0 -ml-2"
+          />
+          <img
+            src="./img/maison.png"
+            alt="brand2"
+            class="w-10 h-10 rounded-full object-cover border-0 -ml-2"
+          />
+          <img
+            src="./img/moon-studio.png"
+            alt="brand3"
+            class="w-10 h-10 rounded-full object-cover border-0 -ml-2"
+          />
+          <img
+            src="./img/think.png"
+            alt="brand4"
+            class="w-10 h-10 rounded-full object-cover border-0 -ml-2"
+          />
+          <div>
+            <!-- Text -->
+            <p class="text-white font-medium text-sm md:text-base ml-2">
+              3,200+ brands served
+            </p>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="w-full pt-10">
+          <img
+            src="./img/hero-img.jpeg"
+            class="w-full max-w-5xl max-h[450px] rounded-t-3xl mx-auto"
+            alt="hero-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about" class="px-6 md:px-16 py-16 bg-light text-gray-800">
+      <!-- Heading -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Who We Are</h2>
+        <p class="max-w-2xl mx-auto text-base text-gray-600">
+          Socianova is a digital-first marketing company built to help brands
+          grow through the power of authentic influence. We connect businesses
+          with creators who genuinely align with their values.
+        </p>
+      </div>
+
+      <!-- Mission & Vision -->
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <!-- Left Text Section -->
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-lg font-semibold mb-1">Mission</h3>
+            <p class="text-gray-600">
+              To empower businesses of every size to unlock the full potential
+              of influencer marketing and turn social platforms into engines of
+              growth.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-1">Vision</h3>
+            <p class="text-gray-600">
+              A future where influence is transparent, impactful, and
+              meaningful, helping brands and creators thrive together.
+            </p>
+          </div>
+
+          <button
+            class="bg-accent hover:bg-accent text-light px-6 py-2 rounded-md font-medium transition"
+          >
+            Meet Our Team
+          </button>
+        </div>
+
+        <!-- Right Image Section -->
+        <div class="flex justify-center md:justify-end">
+          <img
+            src="./img/about-us.jpg"
+            alt="Team at work"
+            class="w-full rounded-2xl border-4 border-[#73cb4e] object-cover"
+          />
+        </div>
+      </div>
+      <div class="py-16 bg-gray-50 text-gray-800">
+        <div class="max-w-6xl mx-auto px-6 text-center mb-12">
+          <h2 class="text-2xl font-bold mb-4">What Makes Us Unique</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Our approach combines authenticity, creativity, and proven strategy
+            to deliver real, lasting results.
+          </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6"
+        >
+          <!-- Card 1 -->
+          <div class="unique-card">
+            <div class="unique-card-items">
+              <span class="unique-card-icons bg-green-100">
+                <i class="fa-solid fa-bullseye text-green-500"></i>
+              </span>
+              <h3>Authenticity First</h3>
+            </div>
+
+            <p class="text-gray-600 text-sm leading-relaxed">
+              We partner only with influencers who truly resonate with your
+              audience.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="unique-card">
+            <div class="unique-card-items">
+              <span class="unique-card-icons bg-blue-100">
+                <i class="fa-solid fa-square-plus text-blue-500"></i>
+              </span>
+              <h3>Data + Creativity</h3>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Every strategy is backed by insight, but designed with human
+              connection in mind.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="unique-card">
+            <div class="unique-card-items">
+              <span
+                class="flex items-center justify-center w-10 h-10 rounded-md bg-amber-100"
+              >
+                <i class="fa-solid fa-square-poll-vertical text-amber-500"></i>
+              </span>
+              <h3>Proven Results</h3>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              3,200+ brands and 1,850+ campaigns delivered with measurable
+              growth.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="unique-card flex flex-col gap-2">
+            <div class="flex items-start gap-3">
+              <span
+                class="flex items-center justify-center w-10 h-10 rounded-md bg-purple-100"
+              >
+                <i class="fa-solid fa-chess-queen text-purple-500 text-lg"></i>
+              </span>
+              <h3 class="font-semibold text-gray-900 mt-1">Scalable for All</h3>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Whether you’re a startup or an established brand, we tailor
+              strategies to fit your journey.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULT SECTION -->
+    <section id="results" class="py-20 bg-white text-gray-800">
+      <div class="max-w-6xl mx-auto px-6">
+        <!-- Section Title -->
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Proven Growth. Real Results.
+        </h2>
+        <!-- Content Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <!-- Left Image -->
+          <div>
+            <img
+              src="./img/results.jpg"
+              alt="Results meeting"
+              class="w-full rounded-2xl border-4 border-[#73cb4e] object-cover"
+            />
+          </div>
+          <!-- Right Text Content -->
+          <div>
+            <p class="text-gray-700 mb-6 leading-relaxed">
+              At Socianova, numbers tell the story. Every campaign is designed
+              to turn engagement into measurable growth, helping brands convert
+              likes into loyal customers and followers into lasting sales.
+            </p>
+
+            <!-- 3 Impact Points -->
+            <div class="space-y-5 mb-8">
+              <div class="flex items-start gap-4">
+                <div
+                  class="bg-[#e9f9e3] text-[#73cb4e] w-10 h-10 flex items-center justify-center rounded-b-md px-1.5"
+                >
+                  <i
+                    class="fa-solid fa-building-circle-arrow-right text-primary"
+                  ></i>
+                </div>
+                <p class="text-gray-700">
+                  <span class="font-semibold text-gray-900">More Reach:</span>
+                  Clients report up to
+                  <span class="text-[#73cb4e] font-semibold"
+                    >250% increase</span
+                  >
+                  in audience engagement within the first 3 months.
+                </p>
+              </div>
+              <div class="flex items-start gap-4">
+                <div
+                  class="bg-[#e9f9e3] text-[#73cb4e] w-10 h-10 flex items-center justify-center rounded-b-md px-1.5"
+                >
+                  <i
+                    class="fa-solid fa-building-circle-arrow-right text-primary"
+                  ></i>
+                </div>
+
+                <p class="text-gray-700 py-2">
+                  <span class="font-semibold text-gray-900"
+                    >More conversion:</span
+                  >
+                  Campaigns drive
+                  <span class="text-[#73cb4e] font-semibold">3x higher</span>
+                  conversion rates compared to traditional ads.
+                </p>
+              </div>
+              <div class="flex items-start gap-4">
+                <div
+                  class="bg-[#e9f9e3] text-[#73cb4e] w-10 h-10 flex items-center justify-center rounded-b-md px-1.5"
+                >
+                  <i
+                    class="fa-solid fa-building-circle-arrow-right text-primary"
+                  ></i>
+                </div>
+                <p class="text-gray-700">
+                  <span class="font-semibold text-gray-900">More Trust:</span>
+                  Partnering with authentic influencers strengthens brand
+                  loyalty and credibility online.
+                </p>
+              </div>
+            </div>
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap gap-4">
+              <a href="#" class="primary-btn">Start Your Growth Journey</a>
+              <a
+                href="#"
+                class="border border-[#73cb4e] text-[#73cb4e] px-6 py-2 rounded-md cursor-pointer hover:bg-[#73cb4e] hover:text-black transition"
+              >
+                <span
+                  class="play border border-[#73cb4e] rounded-full w-8 h-8 mr-1.5"
+                  ><i class="fa-solid fa-play"></i></span
+                >View Case Studies</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Stats Strip -->
+      <div class="bg-[#001b12] text-white mt-16 py-15">
+        <div
+          class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 text-center gap-6"
+        >
+          <div>
+            <h3 class="text-2xl font-bold text-[#73cb4e]">3,200+</h3>
+            <p class="text-gray-300">Brands trust Socianova</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-[#73cb4e]">1,850+</h3>
+            <p class="text-gray-300">Successful campaigns delivered</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-[#73cb4e]">
+              <i class="fa-solid fa-star text-statsrating"></i>4.9/5
+            </h3>
+            <p class="text-gray-300">Average client rating</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blogs / Insight Section -->
+    <section id="resources" class="py-16 bg-white text-center">
+      <!-- Heading -->
+      <div class="max-w-2xl mx-auto mb-12 px-4">
+        <h2 class="text-3xl font-bold mb-4 text-gray-900">
+          Learn. Apply. Grow.
+        </h2>
+        <p class="text-gray-600">
+          At Socianova, we don’t just run campaigns, we share the knowledge
+          behind what works. Our resources are designed to help businesses and
+          marketers understand the power of influence, craft smarter strategies,
+          and stay ahead of social trends.
+        </p>
+      </div>
+      <!-- Cards -->
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6 mb-12"
+      >
+        <!-- Card 1 -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+        >
+          <img
+            src="./img/influencer.jpg"
+            alt="Influencer"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-5 text-left">
+            <span
+              class="bg-[#73cb4e] text-white text-xs font-medium px-3 py-1 rounded-full mb-2 inline-block"
+              >News</span
+            >
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+              How to Choose the Right Influencer for Your Brand
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Not every influencer is a fit. Learn the key factors to consider,
+              from audience alignment to authenticity, before partnering up.
+            </p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+        >
+          <img
+            src="./img/marketing.jpg"
+            alt="ROI"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-5 text-left">
+            <span
+              class="bg-[#73cb4e] text-white text-xs font-medium px-3 py-1 rounded-full mb-2 inline-block"
+              >News</span
+            >
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+              The ROI of Influencer Marketing: What the Numbers Say
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Break down the real returns brands are seeing with influencer
+              campaigns and how you can measure success for your business.
+            </p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+        >
+          <img
+            src="./img/trends.jpg"
+            alt="Trends"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-5 text-left">
+            <span
+              class="bg-[#73cb4e] text-white text-xs font-medium px-3 py-1 rounded-full mb-2 inline-block"
+              >News</span
+            >
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+              Top 5 Influencer Marketing Trends to Watch in 2025
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Stay ahead of the curve with the latest trends shaping social
+              media influence, from micro-creators to AI-driven campaigns.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- CTA Buttons -->
+      <div class="flex flex-wrap justify-center gap-4">
+        <button class="primary-btn">Explore More Resources</button>
+        <button
+          class="border border-[#73cb4e] text-[#73cb4e] px-6 py-2 rounded-md hover:bg-[#73cb4e] hover:text-black transition"
+        >
+          <i class="fa-solid fa-play text-sm"></i>
+
+          Download Free Guide
+        </button>
+      </div>
+    </section>
+
+    <!-- SCRIPT FILE -->
+    <script src="./script.js"></script>
+  </body>
+</html>
