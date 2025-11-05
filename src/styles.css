@@ -74,3 +74,12 @@ h3 {
   background: #f5e8ff;
   color: #a855f7; /* Tailwind purple-500 */
 }
+
+/* Social Icons */
+.social-icon {
+  @apply block py-2 hover:text-accent transition-colors duration-300;
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+}

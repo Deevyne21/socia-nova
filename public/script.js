@@ -73,3 +73,31 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// Testimonial Review Carousels
+
+const carousel = document.getElementById("testimonial-carousel");
+const slides = carousel.children;
+const totalSlides = slides.length;
+
+let index = 0;
+
+function showSlide(i) {
+  // Ensure index loops around
+  index = (i + totalSlides) % totalSlides;
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+}
+
+// Buttons
+document.getElementById("next").addEventListener("click", () => {
+  showSlide(index + 1);
+});
+
+document.getElementById("prev").addEventListener("click", () => {
+  showSlide(index - 1);
+});
+
+// Auto-slide every 6 seconds
+setInterval(() => {
+  showSlide(index + 1);
+}, 6000);

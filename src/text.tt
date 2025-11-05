@@ -83,3 +83,13 @@ id="nav-links"
       <li><a href="#contact" class="block py-2 hover:text-accent">Contact</a></li>
       
 class="transition-all duration-500 ease-in-out transform origin-top"
+
+
+<a href="#hero" class="flex gap-2 items-center">
+          <span
+            class="bg-accent w-8 h-8 flex items-center justify-center rounded-full"
+          >
+            <i class="fa-solid fa-hexagon-nodes"></i>
+          </span>
+          <span class="logo text-xl font-semibold">Socianova</span>
+        </a>
