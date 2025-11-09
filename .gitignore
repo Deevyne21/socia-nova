@@ -2,8 +2,7 @@
 # Node modules
 node_modules/
 
-# Tailwind build output
-public/styles.css
+
 
 # Logs
 npm-debug.log*
