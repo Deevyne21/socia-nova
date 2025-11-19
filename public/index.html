@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Socianova | Grow With Real Influence</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,8 +16,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Socianova | Grow With Real Influence</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body class="bg-secondary text-dark font-body">
     <!-- NAV -->
     <nav
@@ -156,7 +158,7 @@
         <!-- Hero Image -->
         <div class="w-full pt-10">
           <img
-            src="./img/hero-img.jpeg"
+            src="./img/hero-image.jpg"
             class="w-full max-w-5xl max-h[450px] rounded-t-3xl mx-auto"
             alt="hero-img"
           />
@@ -454,11 +456,7 @@
         <div
           class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300"
         >
-          <img
-            src="./img/influencer.jpg"
-            alt="Influencer"
-            class="w-full h-48 object-cover"
-          />
+          <img src="./img/influencer.jpg" alt="influencer" />
           <div class="p-5 text-left">
             <button
               class="bg-primary text-white text-xs font-medium px-3 py-2 rounded mb-2 inline-block"
@@ -503,7 +501,7 @@
               campaigns and how you can measure success for your business.
             </p>
             <button
-              onclick="openModal('blog1')"
+              onclick="openModal('blog2')"
               class="text-accent mt-2 cursor-pointer hover:underline"
             >
               Read more...
@@ -533,7 +531,7 @@
               media influence, from micro-creators to AI-driven campaigns.
             </p>
             <button
-              onclick="openModal('blog1')"
+              onclick="openModal('blog3')"
               class="text-accent mt-2 cursor-pointer hover:underline"
             >
               Read more...
@@ -709,6 +707,243 @@
       </div>
     </section>
 
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-16 px-6 bg-gray-50">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-dark mb-4">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-gray-600 text-lg">
+            We've kept things simple, but if you're wondering, here's more.
+          </p>
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="space-y-4">
+          <!-- FAQ 1 -->
+          <div
+            class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+          >
+            <button
+              class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors"
+            >
+              <span class="text-lg font-semibold text-dark"
+                >What does Socianova do?</span
+              >
+              <span
+                class="faq-icon w-8 h-8 flex items-center justify-center bg-accent rounded-full text-white flex-shrink-0"
+              >
+                <i class="fas fa-plus text-sm"></i>
+              </span>
+            </button>
+            <div
+              class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+            >
+              <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+                Socianova is a full-service influencer marketing agency that
+                connects brands with the right influencers to create authentic,
+                impactful campaigns. We handle everything from strategy and
+                influencer selection to campaign execution and performance
+                tracking.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div
+            class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+          >
+            <button
+              class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors"
+            >
+              <span class="text-lg font-semibold text-dark"
+                >Who are your typical clients?</span
+              >
+              <span
+                class="faq-icon w-8 h-8 flex items-center justify-center bg-accent rounded-full text-white flex-shrink-0"
+              >
+                <i class="fas fa-plus text-sm"></i>
+              </span>
+            </button>
+            <div
+              class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+            >
+              <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+                We work with a diverse range of clients, from startups and SMEs
+                to established brands and Fortune 500 companies across various
+                industries including fashion, beauty, tech, health & wellness,
+                and consumer goods.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div
+            class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+          >
+            <button
+              class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors"
+            >
+              <span class="text-lg font-semibold text-dark"
+                >How do you select influencers for a campaign?</span
+              >
+              <span
+                class="faq-icon w-8 h-8 flex items-center justify-center bg-accent rounded-full text-white flex-shrink-0"
+              >
+                <i class="fas fa-plus text-sm"></i>
+              </span>
+            </button>
+            <div
+              class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+            >
+              <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+                Our selection process is data-driven and strategic. We analyze
+                influencers based on audience demographics, engagement rates,
+                content quality, brand alignment, and authenticity. We
+                prioritize genuine connections and relevance to ensure real
+                results.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div
+            class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+          >
+            <button
+              class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors"
+            >
+              <span class="text-lg font-semibold text-dark"
+                >What makes Socianova different from other influencer marketing
+                agencies?</span
+              >
+              <span
+                class="faq-icon w-8 h-8 flex items-center justify-center bg-accent rounded-full text-white flex-shrink-0"
+              >
+                <i class="fas fa-plus text-sm"></i>
+              </span>
+            </button>
+            <div
+              class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+            >
+              <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+                We combine data-driven insights with creative storytelling. Our
+                team has deep relationships with top-tier influencers, and we
+                focus on long-term partnerships. We provide transparent
+                reporting, dedicated account management, and guarantee
+                measurable ROI.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div
+            class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+          >
+            <button
+              class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors"
+            >
+              <span class="text-lg font-semibold text-dark"
+                >Can you handle campaigns for international brands?
+              </span>
+              <span
+                class="faq-icon w-8 h-8 flex items-center justify-center bg-accent rounded-full text-white flex-shrink-0"
+              >
+                <i class="fas fa-plus text-sm"></i>
+              </span>
+            </button>
+            <div
+              class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+            >
+              <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+                Yes. We operate globally and can manage campaigns across
+                multiple regions, languages, and social platforms.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 6 -->
+          <div
+            class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+          >
+            <button
+              class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors"
+            >
+              <span class="text-lg font-semibold text-dark"
+                >How do you measure campaign success?</span
+              >
+              <span
+                class="faq-icon w-8 h-8 flex items-center justify-center bg-accent rounded-full text-white flex-shrink-0"
+              >
+                <i class="fas fa-plus text-sm"></i>
+              </span>
+            </button>
+            <div
+              class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+            >
+              <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+                We track key metrics like engagement, conversions, audience
+                growth, and ROI — providing detailed performance reports after
+                every campaign.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 7 -->
+          <div
+            class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+          >
+            <button
+              class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors"
+            >
+              <span class="text-lg font-semibold text-dark"
+                >Do you offer custom packages or pricing?
+              </span>
+              <span
+                class="faq-icon w-8 h-8 flex items-center justify-center bg-accent rounded-full text-white flex-shrink-0"
+              >
+                <i class="fas fa-plus text-sm"></i>
+              </span>
+            </button>
+            <div
+              class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+            >
+              <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+                Yes. Every campaign is tailored to fit your brand goals, budget,
+                and target audience. Get in touch to discuss a package that
+                works for you.
+              </div>
+            </div>
+          </div>
+          <!-- FAQ 7 -->
+          <div
+            class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+          >
+            <button
+              class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors"
+            >
+              <span class="text-lg font-semibold text-dark"
+                >How can I get started with Socianova?
+              </span>
+              <span
+                class="faq-icon w-8 h-8 flex items-center justify-center bg-accent rounded-full text-white flex-shrink-0"
+              >
+                <i class="fas fa-plus text-sm"></i>
+              </span>
+            </button>
+            <div
+              class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+            >
+              <div class="px-6 pb-6 text-gray-600 leading-relaxed">
+                Simply reach out through our contact form or email us at
+                hello@socianova.com — our team will respond within 24 hours to
+                discuss your campaign goals.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT SECTION -->
     <section class="bg-gray-50 py-12 px-6 md:px-16">
       <div class="max-w-6xl mx-auto text-center mb-10">
@@ -809,6 +1044,37 @@
       </div>
     </section>
 
+    <!-- LOGO SLIDER SECTION -->
+    <section class="px-5 md:px-24 py-10 bg-secondary text-dark">
+      <h2
+        class="font-heading font-bold flex justify-center pb-10 text-lg text-primary"
+      >
+        Trusted by Leading Brands
+      </h2>
+      <div class="logo-slider">
+        <div class="brand-logos">
+          <img src="img/loop-trans.png" alt="Loop" />
+          <img src="img/maison-trans.png" alt="Maison Brand" />
+          <img src="img/think-trans.png" alt="Think brand" />
+          <img src="img/moon-studio-trans.png" alt="Moon Studio Brand" />
+        </div>
+
+        <div class="brand-logos">
+          <img src="img/loop-trans.png" alt="Loop" />
+          <img src="img/maison-trans.png" alt="Maison Brand" />
+          <img src="img/think-trans.png" alt="Think brand" />
+          <img src="img/moon-studio-trans.png" alt="Moon Studio Brand" />
+        </div>
+
+        <div class="brand-logos">
+          <img src="img/loop-trans.png" alt="Loop" />
+          <img src="img/maison-trans.png" alt="Maison Brand" />
+          <img src="img/think-trans.png" alt="Think brand" />
+          <img src="img/moon-studio-trans.png" alt="Moon Studio Brand" />
+        </div>
+      </div>
+    </section>
+
     <!-- FOOTER -->
     <footer class="bg-primary text-white py-12">
       <div
@@ -842,7 +1108,12 @@
             <a href="#" class="social-icon"
               ><i class="fa-brands fa-x-twitter"></i
             ></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a
+              href="https://www.x.com/codewithjaya"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-instagram"></i
+            ></a>
             <a href="#" class="social-icon"
               ><i class="fab fa-facebook-f"></i
             ></a>
@@ -893,24 +1164,373 @@
         <div
           class="mt-3 flex flex-col md:flex-row items-center justify-center gap-0 md:gap-2 text-gray-400 text-sm group"
         >
-          <!-- <span>Cooked fresh by</span> -->
-
-          <span class="text-gray-400 font-medium">Divine Johnson</span>
+          <span class="text-gray-400 font-medium">Code With Jaya</span>
 
           <span class="hidden md:inline">•</span>
 
           <a
             href="#"
-            class="text-gray-400 hover:text-accent transition-colors underline decoration-dotted flex items-center gap-1"
+            class="text-gray-400 hover: transition-colors flex items-center gap-1"
           >
             <span>Buy me a Sandwich</span>
-            <i
-              class="fa-solid fa-burger text-accent group-hover:rotate-180 transition-transform duration-500"
-            ></i>
+            <i class="fa-solid fa-layer-group fa-beat ::before"></i>
           </a>
         </div>
       </div>
     </footer>
+
+    <!-- Blog Modals -->
+    <!-- Modal 1: How to Choose the Right Influencer -->
+    <div
+      id="blog1"
+      class="modal fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4"
+    >
+      <div
+        class="modal-content bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto relative"
+      >
+        <button
+          onclick="closeModal('blog1')"
+          class="absolute top-4 right-4 text-gray-500 hover:text-primary text-3xl font-bold z-10"
+        >
+          &times;
+        </button>
+        <div class="p-8">
+          <span
+            class="bg-primary text-white text-xs font-medium px-3 py-2 rounded mb-4 inline-block"
+          >
+            Guides
+          </span>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            How to Choose the Right Influencer for Your Brand
+          </h2>
+          <img
+            src="./img/influencer.jpg"
+            alt="Influencer"
+            class="w-full h-64 object-cover rounded-lg mb-6"
+          />
+
+          <div class="prose max-w-none text-gray-700 space-y-4">
+            <p class="lead text-lg">
+              Influencer marketing has become one of the most effective ways for
+              brands to connect with their target audiences. But here's the
+              catch — not every influencer is the right fit for your brand.
+              Choosing the wrong partner can waste time, money, and even harm
+              your brand's reputation.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-900 mt-6 mb-3">
+              1. Know Your Goals
+            </h3>
+            <p>
+              Before reaching out to any influencer, get clear on your campaign
+              objectives. Are you trying to increase brand awareness, boost
+              sales, or build community engagement? Your goal determines the
+              type of influencer you should work with.
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>
+                <strong>Brand awareness:</strong> Macro or celebrity influencers
+                with a wide reach.
+              </li>
+              <li>
+                <strong>Engagement and trust:</strong> Micro or nano influencers
+                with smaller but highly active audiences.
+              </li>
+            </ul>
+
+            <h3 class="text-2xl font-bold text-gray-900 mt-6 mb-3">
+              2. Understand Your Target Audience
+            </h3>
+            <p>
+              Your influencer's audience should mirror your brand's target
+              market. Look at demographics like age, gender, interests, and
+              location. Tools like HypeAuditor or Social Blade can help you
+              analyze an influencer's audience insights.
+            </p>
+            <p>
+              If your audiences don't align, even the most creative campaign
+              won't drive meaningful results.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-900 mt-6 mb-3">
+              3. Check Authenticity and Engagement
+            </h3>
+            <p>
+              Follower count doesn't always equal influence. A smaller
+              influencer with strong engagement can often outperform one with a
+              massive following. Look for:
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>Genuine comments, not spammy or repetitive ones.</li>
+              <li>Consistent engagement rate (typically 2–5% is good).</li>
+              <li>
+                Authentic storytelling and personal connection with their
+                followers.
+              </li>
+            </ul>
+
+            <h3 class="text-2xl font-bold text-gray-900 mt-6 mb-3">
+              4. Review Content Quality and Brand Fit
+            </h3>
+            <p>
+              Scroll through the influencer's posts. Is their content aesthetic,
+              consistent, and aligned with your brand's tone? If your brand
+              promotes sustainability, partnering with an influencer who often
+              features fast-fashion brands would feel disingenuous.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-900 mt-6 mb-3">
+              5. Evaluate Professionalism
+            </h3>
+            <p>
+              A good influencer treats their work like a business. Notice how
+              they communicate, handle deadlines, and present their media kit.
+              Professionalism builds smoother partnerships and stronger
+              long-term collaborations.
+            </p>
+
+            <div class="bg-accent/10 border-l-4 border-accent p-4 mt-6">
+              <p class="font-semibold text-gray-900">
+                <strong>Conclusion:</strong> The right influencer can amplify
+                your message, humanize your brand, and build meaningful customer
+                relationships. Take your time to research, vet, and build
+                authentic partnerships that align with your brand's vision and
+                values.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2: The ROI of Influencer Marketing -->
+    <div
+      id="blog2"
+      class="modal fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4"
+    >
+      <div
+        class="modal-content bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto relative"
+      >
+        <button
+          onclick="closeModal('blog2')"
+          class="absolute top-4 right-4 text-gray-500 hover:text-primary text-3xl font-bold z-10"
+        >
+          &times;
+        </button>
+        <div class="p-8">
+          <span
+            class="bg-primary text-white text-xs font-medium px-3 py-2 rounded mb-4 inline-block"
+          >
+            Case Studies
+          </span>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            The ROI of Influencer Marketing: What the Numbers Say
+          </h2>
+          <img
+            src="./img/marketing.jpg"
+            alt="ROI Marketing"
+            class="w-full h-64 object-cover rounded-lg mb-6"
+          />
+
+          <div class="prose max-w-none text-gray-700 space-y-4">
+            <p class="lead text-lg">
+              Influencer marketing isn't just a buzzword anymore — it's a proven
+              business strategy. But as brands pour more budget into influencer
+              partnerships, one big question remains: What's the real ROI?
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-900 mt-6 mb-3">
+              1. The Numbers Behind Influencer ROI
+            </h3>
+            <p>
+              According to studies from Influencer Marketing Hub, businesses are
+              making <strong>$5.20 for every $1 spent</strong> on influencer
+              marketing. That's an impressive ROI — but it doesn't happen by
+              accident. Success comes from working with the right influencers
+              and tracking the right metrics.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-900 mt-6 mb-3">
+              2. What Metrics Really Matter
+            </h3>
+            <p>
+              To calculate your ROI, look beyond vanity metrics like likes or
+              views. Focus on:
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>
+                <strong>Engagement Rate:</strong> Comments, shares, and saves
+                show real interaction.
+              </li>
+              <li>
+                <strong>Conversion Rate:</strong> How many followers actually
+                bought or signed up?
+              </li>
+              <li>
+                <strong>Traffic Source:</strong> Use UTM links or promo codes to
+                track referral traffic.
+              </li>
+              <li>
+                <strong>Customer Lifetime Value (CLV):</strong> Influencer
+                campaigns often create loyal, long-term customers.
+              </li>
+            </ul>
+
+            <h3 class="text-2xl font-bold text-gray-900 mt-6 mb-3">
+              3. Short-Term vs Long-Term ROI
+            </h3>
+            <p>
+              Some influencer campaigns drive quick conversions, while others
+              build brand awareness over time.
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>
+                <strong>Short-term ROI</strong> = sales, leads, or website
+                visits.
+              </li>
+              <li>
+                <strong>Long-term ROI</strong> = brand loyalty, trust, and
+                community growth.
+              </li>
+            </ul>
+            <p>The most successful brands measure both.</p>
+
+            <h3 class="text-2xl font-bold text-gray-900 mt-6 mb-3">
+              4. How to Improve ROI
+            </h3>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>
+                Work with micro-influencers for better engagement and lower
+                costs.
+              </li>
+              <li>Set clear campaign goals before launch.</li>
+              <li>
+                Use performance-based contracts where influencers earn more for
+                measurable results.
+              </li>
+              <li>
+                Track everything — use Google Analytics, affiliate links, and
+                social insights.
+              </li>
+            </ul>
+
+            <div class="bg-accent/10 border-l-4 border-accent p-4 mt-6">
+              <p class="font-semibold text-gray-900">
+                <strong>Conclusion:</strong> The ROI of influencer marketing
+                goes beyond immediate sales. It's about trust, brand equity, and
+                relationships that lead to sustainable growth. By combining data
+                with genuine connections, your influencer strategy can deliver
+                measurable — and lasting — returns.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3: Top 5 Influencer Marketing Trends -->
+    <div
+      id="blog3"
+      class="modal fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4"
+    >
+      <div
+        class="modal-content bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto relative"
+      >
+        <button
+          onclick="closeModal('blog3')"
+          class="absolute top-4 right-4 text-gray-500 hover:text-primary text-3xl font-bold z-10"
+        >
+          &times;
+        </button>
+        <div class="p-8">
+          <span
+            class="bg-primary text-white text-xs font-medium px-3 py-2 rounded mb-4 inline-block"
+          >
+            Trends
+          </span>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Top 5 Influencer Marketing Trends to Watch in 2025
+          </h2>
+          <img
+            src="./img/trends.jpg"
+            alt="Marketing Trends"
+            class="w-full h-64 object-cover rounded-lg mb-6"
+          />
+
+          <div class="prose max-w-none text-gray-700 space-y-4">
+            <p class="lead text-lg">
+              Influencer marketing is evolving at lightning speed. As we step
+              into 2025, new technologies, audience behaviors, and creative
+              strategies are reshaping how brands collaborate with creators.
+              Staying ahead of these trends will help your brand remain relevant
+              — and competitive.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-900 mt-6 mb-3">
+              1. Rise of Micro and Nano Influencers
+            </h3>
+            <p>
+              Bigger isn't always better. Brands are realizing that micro
+              (10K–100K) and nano (1K–10K) influencers often drive more
+              authentic engagement. Their smaller communities feel more
+              personal, leading to higher trust and conversion rates.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-900 mt-6 mb-3">
+              2. AI-Powered Influencer Discovery
+            </h3>
+            <p>
+              Artificial Intelligence is changing how brands find and analyze
+              influencers. AI tools can now detect fake followers, measure
+              engagement quality, and even predict which influencers will
+              perform best based on campaign goals. Expect AI-driven platforms
+              to become standard in 2025.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-900 mt-6 mb-3">
+              3. Video-First Campaigns Dominate
+            </h3>
+            <p>
+              Short-form video content continues to rule, especially on TikTok,
+              Instagram Reels, and YouTube Shorts. In 2025, successful
+              influencer marketing will prioritize video storytelling,
+              behind-the-scenes content, and interactive formats that connect
+              emotionally with audiences.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-900 mt-6 mb-3">
+              4. Social Commerce Integration
+            </h3>
+            <p>
+              With features like Instagram Checkout and TikTok Shop, influencers
+              can now drive direct sales without users leaving the app. This
+              seamless experience makes influencer-driven eCommerce one of the
+              biggest growth opportunities for brands this year.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-900 mt-6 mb-3">
+              5. Authenticity and Transparency Win
+            </h3>
+            <p>
+              Audiences crave realness. 2025 will reward influencers who share
+              honest experiences, disclose partnerships openly, and prioritize
+              community over clout. Brands that support this authenticity will
+              gain stronger loyalty and reputation.
+            </p>
+
+            <div class="bg-accent/10 border-l-4 border-accent p-4 mt-6">
+              <p class="font-semibold text-gray-900">
+                <strong>Conclusion:</strong> The influencer marketing landscape
+                in 2025 is all about authentic connections, data-driven
+                strategy, and creativity powered by technology. By embracing
+                these trends early, your brand can stay ahead and make every
+                collaboration count.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- SCRIPT FILE -->
     <script src="./script.js"></script>

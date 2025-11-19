@@ -73,6 +73,7 @@ window.addEventListener("resize", () => {
     callBtn.classList.add("block");
   }
 });
+
 //Counter animation function
 function animateCounter(element, target, duration = 2000) {
   const isDecimal = target % 1 !== 0;
@@ -108,7 +109,7 @@ const observer = new IntersectionObserver((entries) => {
         const target = parseFloat(counter.getAttribute("data-target"));
         animateCounter(counter, target);
       });
-      observer.unobserve(entry.target); // Only animate once
+      observer.unobserve(entry.target);
     }
   });
 }, observerOptions);
@@ -119,6 +120,41 @@ if (statsSection) {
   observer.observe(statsSection);
 }
 
+// Blog Post Modal Functions
+function openModal(modalId) {
+  const modal = document.getElementById(modalId);
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+  document.body.style.overflow = "auto";
+}
+
+// Close modal when clicking outside
+document.querySelectorAll(".modal").forEach((modal) => {
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      closeModal(modal.id);
+    }
+  });
+});
+
+// Close modal with Escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    document.querySelectorAll(".modal").forEach((modal) => {
+      if (!modal.classList.contains("hidden")) {
+        closeModal(modal.id);
+      }
+    });
+  }
+});
+
 // Testimonial Review Carousels
 
 const carousel = document.getElementById("testimonial-carousel");
@@ -128,7 +164,6 @@ const totalSlides = slides.length;
 let index = 0;
 
 function showSlide(i) {
-  // Ensure index loops around
   index = (i + totalSlides) % totalSlides;
   carousel.style.transform = `translateX(-${index * 100}%)`;
 }
@@ -146,3 +181,38 @@ document.getElementById("prev").addEventListener("click", () => {
 setInterval(() => {
   showSlide(index + 1);
 }, 6000);
+
+// FAQ SECTION
+const faqQuestions = document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach((question) => {
+  question.addEventListener("click", () => {
+    const answer = question.nextElementSibling;
+    const icon = question.querySelector(".faq-icon i");
+    const isActive = answer.style.maxHeight && answer.style.maxHeight !== "0px";
+
+    // Close all other FAQs
+    document.querySelectorAll(".faq-answer").forEach((item) => {
+      if (item !== answer) {
+        item.style.maxHeight = "0px";
+        item.previousElementSibling
+          .querySelector(".faq-icon i")
+          .classList.remove("fa-minus");
+        item.previousElementSibling
+          .querySelector(".faq-icon i")
+          .classList.add("fa-plus");
+      }
+    });
+
+    // Toggle current FAQ
+    if (isActive) {
+      answer.style.maxHeight = "0px";
+      icon.classList.remove("fa-minus");
+      icon.classList.add("fa-plus");
+    } else {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+      icon.classList.remove("fa-plus");
+      icon.classList.add("fa-minus");
+    }
+  });
+});

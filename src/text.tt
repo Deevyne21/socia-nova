@@ -93,3 +93,9 @@ class="transition-all duration-500 ease-in-out transform origin-top"
           </span>
           <span class="logo text-xl font-semibold">Socianova</span>
         </a>
+
+
+
+
+RESOURCES PROMPT
+I am working on a project, Socianova and it is a single page project for a marketing brand. it has several section/pages though: like, About, Results, Resources, Testimonial, Contact. The resources section will have several blog post which i added 3 for now. i have created and style the blog card and the meta description. but if the read more button is clicked, it does not do anything for now. How do i go about the blog post:
