@@ -54,17 +54,17 @@ h3 {
 
 .bg-creativityiconbg {
   background: #e7f0ff;
-  color: #3b82f6; /* Tailwind blue-500 */
+  color: #3b82f6;
 }
 
 .bg-resulticonbg {
   background: #fff4e5;
-  color: #f59e0b; /* Tailwind amber-500 */
+  color: #f59e0b;
 }
 
 .bg-scalableiconbg {
   background: #f5e8ff;
-  color: #a855f7; /* Tailwind purple-500 */
+  color: #a855f7;
 }
 
 /* Social Icons */
@@ -81,8 +81,8 @@ h3 {
   display: flex;
   align-items: center;
   overflow: hidden;
-  position: relative; /* Added */
-  width: 100%; /* Ensures container takes full width */
+  position: relative;
+  width: 100%;
   position: relative;
 }
 
@@ -93,7 +93,7 @@ h3 {
   flex-shrink: 0;
   padding-right: 4rem;
   animation: 20s slide infinite linear;
-  will-change: transform; /* Improves performance */
+  will-change: transform;
 }
 
 .brand-logos img {

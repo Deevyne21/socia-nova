@@ -18,7 +18,7 @@ menuBtn.addEventListener("click", () => {
     // Open the menu
     navLinks.classList.remove("hidden");
 
-    // Show CTA button in mobile menu (moves it inside on mobile)
+    // Show CTA button in mobile menu
     if (window.innerWidth < 768) {
       navLinks.appendChild(callBtn);
       callBtn.classList.remove("hidden");
@@ -74,7 +74,7 @@ window.addEventListener("resize", () => {
   }
 });
 
-//Counter animation function
+// Counter animation function
 function animateCounter(element, target, duration = 2000) {
   const isDecimal = target % 1 !== 0;
   const increment = target / (duration / 16); // 60fps

@@ -18,6 +18,7 @@
     />
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>Socianova | Grow With Real Influence</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -92,7 +93,11 @@
       id="hero"
       class="pt-[120px] px-6 md:px-12 text-center bg-primary text-light"
     >
-      <div class="flex flex-col items-center text-center">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="800"
+        class="flex flex-col items-center text-center"
+      >
         <!-- Headline -->
         <h1
           class="text-2xl sm:text-3xl md:text-5xl font-semibold leading-snug md:leading-tight max-w-3xl"
@@ -100,7 +105,11 @@
           Turn Followers Into Loyal Customers
         </h1>
 
-        <p class="max-w-xl text-sm sm:text-base md:text-lg text-gray-100 py-4">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="max-w-xl text-sm sm:text-base md:text-lg text-gray-100 py-4"
+        >
           Socianova helps brands grow with authentic influencer marketing,
           building trust, driving engagement, and converting social influence
           into measurable business results.
@@ -108,13 +117,20 @@
 
         <!-- CTA BUTTONS-->
 
-        <div class="flex flex-col sm:flex-row gap-5 sm:gap-7 items-center py-4">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="400"
+          class="flex flex-col sm:flex-row gap-5 sm:gap-7 items-center py-4"
+        >
           <div class="primary-btn w-full sm:w-auto">
-            <a href="#" class="block text-cente">Get Started </a>
+            <button class="block text-center">
+              <a href="#form"> Get Started </a>
+            </button>
           </div>
           <div>
             <a
-              href="#"
+              href="https://www.tiktok.com/code_withjaya"
+              target="_blank"
               class="flex items-center justify-center gap-2 text-sm sm:text-base"
             >
               <span
@@ -169,7 +185,7 @@
     <!-- ABOUT US -->
     <section id="about" class="px-6 md:px-16 py-12 bg-light text-gray-800">
       <!-- Heading -->
-      <div class="text-center mb-12">
+      <div data-aos="zoom-in" data-aos-delay="200" class="text-center mb-12">
         <h2 class="text-3xl font-bold mb-4">Who We Are</h2>
         <p class="max-w-2xl mx-auto text-base text-gray-600">
           Socianova is a digital-first marketing company helping brands grow by
@@ -181,7 +197,7 @@
       <div class="grid md:grid-cols-2 gap-10 items-center">
         <!-- Left Text Section -->
         <div class="space-y-6">
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="100">
             <h3 class="text-lg font-semibold mb-1">Mission</h3>
             <p class="text-gray-600">
               To empower businesses of every size to unlock the full potential
@@ -190,7 +206,7 @@
             </p>
           </div>
 
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="300">
             <h3 class="text-lg font-semibold mb-1">Vision</h3>
             <p class="text-gray-600">
               A future where influence is transparent, impactful, and
@@ -206,7 +222,7 @@
         </div>
 
         <!-- Right Image Section -->
-        <div class="flex justify-center md:justify-end">
+        <div data-aos="fade-right" class="flex justify-center md:justify-end">
           <img
             src="./img/about-us.jpg"
             alt="Team at work"
@@ -228,7 +244,7 @@
           class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6"
         >
           <!-- Card 1 -->
-          <div class="unique-card">
+          <div data-aos="flip-up" data-aos-delay="100" class="unique-card">
             <div class="unique-card-items">
               <span class="unique-card-icons bg-green-100">
                 <i class="fa-solid fa-bullseye text-green-500"></i>
@@ -243,7 +259,7 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="unique-card">
+          <div data-aos="flip-up" data-aos-delay="200" class="unique-card">
             <div class="unique-card-items">
               <span class="unique-card-icons bg-blue-100">
                 <i class="fa-solid fa-square-plus text-blue-500"></i>
@@ -257,7 +273,7 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="unique-card">
+          <div data-aos="flip-up" data-aos-delay="300" class="unique-card">
             <div class="unique-card-items">
               <span
                 class="flex items-center justify-center w-10 h-10 rounded-md bg-amber-100"
@@ -273,7 +289,11 @@
           </div>
 
           <!-- Card 4 -->
-          <div class="unique-card flex flex-col gap-2">
+          <div
+            data-aos="flip-up"
+            data-aos-delay="400"
+            class="unique-card flex flex-col gap-2"
+          >
             <div class="flex items-start gap-3">
               <span
                 class="flex items-center justify-center w-10 h-10 rounded-md bg-purple-100"
@@ -293,12 +313,12 @@
 
     <!-- RESULT SECTION -->
     <section id="results" class="py-12 bg-white text-gray-800">
-      <div class="max-w-6xl mx-auto px-6">
+      <div data-aos="flip-up" class="max-w-6xl mx-auto px-6">
         <!-- Section Title -->
         <h2 class="text-3xl font-bold text-center mb-12">
           Proven Growth. Real Results.
         </h2>
-        <!-- Content Grid -->
+
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <!-- Left Image -->
           <div>
@@ -309,14 +329,14 @@
             />
           </div>
           <!-- Right Text Content -->
-          <div>
+          <div data-aos="fade-up" data-aos-delay="100">
             <p class="text-gray-700 mb-6 leading-relaxed">
               At Socianova, numbers tell the story. Every campaign is designed
               to turn engagement into measurable growth, helping brands convert
               likes into loyal customers and followers into lasting sales.
             </p>
 
-            <!-- 3 Impact Points -->
+            <!--  Impact Points -->
             <div class="space-y-5 mb-8">
               <div class="flex items-start gap-4">
                 <div
@@ -367,7 +387,11 @@
               </div>
             </div>
             <!-- CTA Buttons -->
-            <div class="flex flex-wrap gap-4">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="200"
+              class="flex flex-wrap gap-4"
+            >
               <a href="#" class="primary-btn">Start Your Growth Journey</a>
               <a
                 href="#"
@@ -382,52 +406,36 @@
           </div>
         </div>
       </div>
-      <!-- Stats Strip -->
 
+      <!-- Stats Strip -->
       <div
         id="stats"
         class="bg-primary text-light mt-6 py-12 flex flex-col md:flex-row justify-center items-center md:space-x-24 space-y-8 md:space-y-0"
       >
-        <div data-aos="zoom-in" class="flex flex-col items-center">
-          <span class="text-4xl pb-2"
-            ><span class="counter" data-target="3200">0</span>+</span
-          >
+        <div class="flex flex-col items-center">
+          <span class="text-4xl font-bold text-accent pb-2">
+            <span class="counter" data-target="3200">0</span>+
+          </span>
           <p class="opacity-75">Brands trust Socianova</p>
         </div>
 
         <!-- Divider -->
-        <div
-          data-aos="zoom-in"
-          class="hidden md:block w-px h-24 bg-light"
-        ></div>
-        <!-- vertical line for desktop -->
-        <div
-          data-aos="zoom-in"
-          class="block md:hidden w-64 h-px bg-light"
-        ></div>
-        <!-- horizontal line for mobile -->
+        <div class="hidden md:block w-px h-24 bg-light"></div>
+        <div class="block md:hidden w-64 h-px bg-light"></div>
 
-        <div data-aos="zoom-in" class="flex flex-col items-center">
-          <span class="text-4xl pb-2"
-            ><span class="counter" data-target="1850">0</span>+</span
-          >
+        <div class="flex flex-col items-center">
+          <span class="text-4xl font-bold text-accent pb-2">
+            <span class="counter" data-target="1850">0</span>+
+          </span>
           <p class="opacity-75">Successful campaigns delivered</p>
         </div>
 
         <!-- Divider -->
-        <div
-          data-aos="zoom-in"
-          class="hidden md:block w-px h-24 bg-light"
-        ></div>
-        <!-- vertical line for desktop -->
-        <div
-          data-aos="zoom-in"
-          class="block md:hidden w-64 h-px bg-light"
-        ></div>
-        <!-- horizontal line for mobile -->
+        <div class="hidden md:block w-px h-24 bg-light"></div>
+        <div class="block md:hidden w-64 h-px bg-light"></div>
 
-        <div data-aos="zoom-in" class="flex flex-col items-center">
-          <span class="text-4xl pb-2">
+        <div class="flex flex-col items-center">
+          <span class="text-4xl font-bold text-accent pb-2">
             <i class="fa-solid fa-star text-statsrating"></i>
             <span class="counter" data-target="4.9">0</span>/5
           </span>
@@ -437,9 +445,14 @@
     </section>
 
     <!-- Blogs / Insight / Resources Section -->
-    <section id="resources" class="py-12 bg-white text-center">
+    <section
+      data-aos="fade-up"
+      data-aos-delay="300"
+      id="resources"
+      class="py-12 bg-white text-center"
+    >
       <!-- Heading -->
-      <div class="max-w-2xl mx-auto mb-12 px-4">
+      <div data-aos="fade-up" class="max-w-2xl mx-auto mb-12 px-4">
         <h2 class="text-3xl font-bold mb-4 text-gray-900">
           Learn. Apply. Grow.
         </h2>
@@ -454,6 +467,8 @@
       >
         <!-- Card 1 -->
         <div
+          data-aos="fade-up"
+          data-aos-delay="100"
           class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300"
         >
           <img src="./img/influencer.jpg" alt="influencer" />
@@ -480,6 +495,8 @@
         </div>
         <!-- Card 2 -->
         <div
+          data-aos="fade-up"
+          data-aos-delay="200"
           class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300"
         >
           <img
@@ -510,6 +527,8 @@
         </div>
         <!-- Card 3 -->
         <div
+          data-aos="fade-up"
+          data-aos-delay="300"
           class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300"
         >
           <img
@@ -541,20 +560,31 @@
       </div>
       <!-- CTA Buttons -->
       <div class="flex flex-wrap justify-center gap-4">
-        <button class="primary-btn">Explore More Resources</button>
+        <button class="primary-btn">
+          <a href="https://www.linkedin.com/in/divine-johnson" target="_blank"
+            >Explore More Resources
+          </a>
+        </button>
         <button
           class="border border-accent text-accent px-6 py-2 rounded-md hover:bg-accent hover:text-dark transition"
         >
           <i class="fa-solid fa-play text-sm"></i>
-          Download Free Guide
+          <a href="https://www.instagram.com/codewithjaya" target="_blank">
+            Download Free Guide
+          </a>
         </button>
       </div>
     </section>
 
     <!-- TESTIMONIAL SECTION -->
 
-    <section class="py-12 bg-light text-dark" id="testimonials">
-      <div class="text-center mb-10">
+    <section
+      data-aos="fade-up"
+      data-aos-delay="500"
+      class="py-12 bg-light text-dark"
+      id="testimonials"
+    >
+      <div data-aos="fade-up" class="text-center mb-10">
         <h2 class="text-2xl md:text-3xl font-bold">
           Trusted by Brands Worldwide
         </h2>
@@ -570,6 +600,8 @@
         <!-- Review Summary Card -->
         <div class="w-full md:w-1/3 flex justify-center px-4">
           <div
+            data-aos="slide-left"
+            data-aos-delay="100"
             class="bg-primary text-light rounded-2xl p-8 shadow-lg text-center w-full md:w-auto"
           >
             <!-- Rating -->
@@ -625,7 +657,11 @@
         </div>
 
         <!-- RIGHT SLIDING TESTIMONIALS -->
-        <div class="w-full md:w-1/3 px-2 relative overflow-hidden">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="150"
+          class="w-full md:w-1/3 px-2 relative overflow-hidden"
+        >
           <div
             id="testimonial-carousel"
             class="flex transition-transform duration-700 ease-in-out"
@@ -708,9 +744,14 @@
     </section>
 
     <!-- FAQ SECTION -->
-    <section id="faq" class="py-16 px-6 bg-gray-50">
+    <section
+      data-aos="fade-up"
+      data-aos-delay="100"
+      id="faq"
+      class="py-16 px-6 bg-gray-50"
+    >
       <div class="max-w-4xl mx-auto">
-        <div class="text-center mb-12">
+        <div data-aos="fade-up" class="text-center mb-12">
           <h2 class="text-4xl font-bold text-dark mb-4">
             Frequently Asked Questions
           </h2>
@@ -720,7 +761,7 @@
         </div>
 
         <!-- FAQ Items -->
-        <div class="space-y-4">
+        <div data-aos="fade-up" data-aos-delay="50" class="space-y-4">
           <!-- FAQ 1 -->
           <div
             class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
@@ -752,6 +793,8 @@
 
           <!-- FAQ 2 -->
           <div
+            data-aos="fade-up"
+            data-aos-delay="150"
             class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
           >
             <button
@@ -780,6 +823,8 @@
 
           <!-- FAQ 3 -->
           <div
+            data-aos="fade-up"
+            data-aos-delay="200"
             class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
           >
             <button
@@ -809,6 +854,8 @@
 
           <!-- FAQ 4 -->
           <div
+            data-aos="fade-up"
+            data-aos-delay="250"
             class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
           >
             <button
@@ -839,6 +886,8 @@
 
           <!-- FAQ 5 -->
           <div
+            data-aos="fade-up"
+            data-aos-delay="300"
             class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
           >
             <button
@@ -864,6 +913,8 @@
           </div>
           <!-- FAQ 6 -->
           <div
+            data-aos="fade-up"
+            data-aos-delay="200"
             class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
           >
             <button
@@ -890,6 +941,8 @@
           </div>
           <!-- FAQ 7 -->
           <div
+            data-aos="fade-up"
+            data-aos-delay="200"
             class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
           >
             <button
@@ -916,6 +969,8 @@
           </div>
           <!-- FAQ 7 -->
           <div
+            data-aos="fade-up"
+            data-aos-delay="200"
             class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
           >
             <button
@@ -946,7 +1001,7 @@
 
     <!-- CONTACT SECTION -->
     <section class="bg-gray-50 py-12 px-6 md:px-16">
-      <div class="max-w-6xl mx-auto text-center mb-10">
+      <div data-aos="zoom-in" class="max-w-6xl mx-auto text-center mb-10">
         <h2 class="text-2xl md:text-3xl font-semibold mb-4">
           Let’s Build Something Together
         </h2>
@@ -959,11 +1014,14 @@
       </div>
 
       <div
+        data-aos="fade-up"
+        data-aos-delay="200"
         class="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 md:gap-16 items-start justify-between"
       >
         <!-- Contact Form -->
         <div class="w-full md:w-2/3 bg-white shadow-md rounded-xl p-8">
           <form
+            id="form"
             action="https://formsubmit.co/ae4838a904e86bf6595a8800bc58b4b5"
             method="POST"
             class="space-y-5"
@@ -973,7 +1031,7 @@
             <input
               type="hidden"
               name="_next"
-              value="https://yourwebsite.com/thankyou.html"
+              value="https://socia-nova-svaz.vercel.app//thankyou.html"
             />
 
             <div>
@@ -1025,7 +1083,11 @@
         </div>
 
         <!-- Contact Info -->
-        <div class="w-full md:w-1/3 text-left space-y-5 pt-5">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="w-full md:w-1/3 text-left space-y-5 pt-5"
+        >
           <div class="mt-5">
             <h4 class="font-semibold text-gray-800 mb-1">Email</h4>
             <p class="text-gray-600">hello@socianova.com</p>
@@ -1076,7 +1138,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-primary text-white py-12">
+    <footer data-aos="fade-up" class="bg-primary text-white py-12">
       <div
         class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left"
       >
@@ -1102,19 +1164,28 @@
 
           <!-- Social Icons -->
           <div class="flex justify-center md:justify-start space-x-4 mt-6">
-            <a href="#" class="social-icon"
+            <a
+              href="https://www.linkedin.com/in/divine-johnson"
+              target="_blank"
+              class="social-icon"
               ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a href="#" class="social-icon"
-              ><i class="fa-brands fa-x-twitter"></i
             ></a>
             <a
               href="https://www.x.com/codewithjaya"
               target="_blank"
               class="social-icon"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/codewithjaya"
+              target="_blank"
+              class="social-icon"
               ><i class="fab fa-instagram"></i
             ></a>
-            <a href="#" class="social-icon"
+            <a
+              href="https://www.facebook.com/codewithjaya"
+              target="_blank"
+              class="social-icon"
               ><i class="fab fa-facebook-f"></i
             ></a>
           </div>
@@ -1179,8 +1250,6 @@
       </div>
     </footer>
 
-    <!-- Blog Modals -->
-    <!-- Modal 1: How to Choose the Right Influencer -->
     <div
       id="blog1"
       class="modal fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4"
@@ -1534,5 +1603,17 @@
 
     <!-- SCRIPT FILE -->
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- // AOS JavaScript -->
+    <script>
+      AOS.init({
+        duration: 1000, // Animation duration
+        easing: "ease-in-out", // Easing function
+        once: true, // Animation happens only once
+        offset: 100, // Offset from trigger point
+        delay: 0, // Delay before animation starts
+      });
+    </script>
   </body>
 </html>
