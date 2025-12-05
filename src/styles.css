@@ -2,6 +2,36 @@
 @config "../tailwind.config.js";
 
 /* Custom CSS */
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+/* Prevent layout shift before AOS initializes */
+[data-aos] {
+  pointer-events: none;
+}
+
+[data-aos].aos-animate {
+  pointer-events: auto;
+}
+
+/* Prevent flash but allow animations */
+[data-aos] {
+  visibility: hidden;
+}
+
+[data-aos].aos-animate {
+  visibility: visible;
+}
+
+/* Ensure all sections respect viewport width */
+section {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 /* Apply Font-family */
 body {
   @apply font-body;
